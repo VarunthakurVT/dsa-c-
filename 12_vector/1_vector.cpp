@@ -13,3 +13,4 @@ int main(){
      cout<<hi[1];
     return 0;
 }
+//vector is a data type just like a array
