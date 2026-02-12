@@ -6,6 +6,10 @@ class Teacher{
     private:  //there is three type of acess modifiers like(private,publid,protected)
     double salary; //these are the property of class
     public:
+    Teacher(){
+      cout<<"Hi i am constructor"<<endl;//this is the constructor
+      dept="Computer Science";
+    }
     string name;
     string dept;
     string subject;
@@ -14,7 +18,7 @@ class Teacher{
     }
     //this is the setter in the pivate acess modifiers
   void setSalary (double s){
-  salary=s;
+  salary=s;  
   }
   //this is the getter acess modifiers.. this is just like the function 
   double getsalary(){
@@ -22,11 +26,12 @@ class Teacher{
   }
 };
 int main(){
-    Teacher t1; //teacher is the object and t1 is the object 
+    Teacher t1; //teacher is the object and t1 is the object and this is the constructor who make automatically  
     t1.name="varun thakur"; //t1.name t1 is the object   and .is used to acess this like class and object 
-    t1.dept="cs";
+    t1.dept;
     t1.setSalary(20000); //in this we do a function call
     cout<<t1.name<<endl;
     cout<<t1.getsalary()<<endl;
+    cout<<t1.dept;
     return 0;
 }
