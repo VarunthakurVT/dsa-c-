@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/vttha/Desktop/dsa with c++(self)/15.linked list",
-      "program": "c:/Users/vttha/Desktop/dsa with c++(self)/15.linked list/build/Debug/outDebug",
+      "cwd": "c:/Users/vttha/OneDrive/Desktop/dsa-c-/13.oops using c++/6.revise",
+      "program": "c:/Users/vttha/OneDrive/Desktop/dsa-c-/13.oops using c++/6.revise/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

@@ -13,6 +13,7 @@ class Student{
     }
 };
 int main(){
+    
     // Student s1; if we do this then it call to non peraertized 
     Student s1("varun");
     
