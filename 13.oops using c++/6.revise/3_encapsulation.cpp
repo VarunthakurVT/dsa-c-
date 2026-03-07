@@ -1,0 +1,1 @@
+// Encapsulation is just like we can make inside the public to get set data of private using get or set keyword
