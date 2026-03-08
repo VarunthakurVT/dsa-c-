@@ -13,7 +13,8 @@ Student(string name,double cgpa){
 //destructor is just opposite of the constructor. Destructor deallocate the class form the memory
 ~Student(){
     cout<<"Hi i delete everything";
-    delete cgpaPtr; //it is used to deallocate the ptr
+    delete cgpaPtr; 
+    //  we can delete one at a time delete name; //it is used to deallocate the ptr
     //it is also used for save memory 
 }
 void getinfo(){

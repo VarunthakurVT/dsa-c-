@@ -3,14 +3,15 @@
 using namespace std;
 class Person{
 public :
-  string Name; 
+  string *Name; 
   int age;
    
   ~Person(){
       cout<<"descructor of parent  class ";
+      delete Name;
   }
   Person(string Name,int age){
-    this->Name=Name;
+    this->Name= new string(Name);
     this->age=age;
     cout<<"parent class"<<endl;
   }

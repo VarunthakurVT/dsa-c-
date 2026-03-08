@@ -39,6 +39,11 @@ class Teacher{
        cout<<"name: "<<name<<endl;
        cout<<"cgpa: "<<*cgpaPtr<<endl;
        cout<<"subject: "<<subject<<endl;
+        } 
+        //constructor oveloading is nothing but creating multiple constructor with different parameters
+        Teacher(string n){
+            this->name=n;
+            cout<<"this is the oveloading constructor"<<endl;
         }
     };
 int main(){
@@ -46,5 +51,7 @@ int main(){
     // t1.getInfo();
     Teacher t2(t1); //default copy constructor is invoke
     t2.getInfo();
+    Teacher t3("varun");
+    t3.getInfo();
     return 0;
 }

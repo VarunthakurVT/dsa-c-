@@ -46,6 +46,11 @@ class Videoproject{
         cout<<"title= "<<title<<endl;
         cout<<"durationINSeconds= "<<durationInSeconds<<endl;
     }
+    Videoproject(Videoproject &obj){
+        this->durationInSeconds=obj.durationInSeconds;
+        this->title=obj.title;
+        cout<<"copy of the constructor";
+    }
 
 }; 
 int main(){
@@ -53,5 +58,7 @@ int main(){
     v1.displayINfo();
     Videoproject v2("varun",200);
     v2.displayINfo();
+    Videoproject v3=v2;
+    v3.displayINfo();
     return 0;
 }
