@@ -1,0 +1,80 @@
+1. The Core Basics (The Foundation)
+[ ] Classes and Objects: Creating blueprints and making real instances in memory.
+
+[ ] Data Members & Member Functions: Declared variables and functions inside a class.
+
+[ ] Access Specifiers (private, public, protected): Controlling who can see and modify the data.
+
+[ ] Size of an Object: Understanding how memory is calculated for an object (padding, empty classes).
+
+2. Constructors & Destructors (Object Lifecycle)
+[ ] Default Constructor: Creating an object with no arguments.
+
+[ ] Parameterized Constructor: Creating an object and passing data immediately.
+
+[ ] Copy Constructor: Cloning an existing object (Deep Copy vs. Shallow Copy).
+
+[ ] Constructor Overloading: Having multiple constructors in the same class.
+
+[ ] Initialization Lists: The highly optimized way to assign values when an object is born.
+
+[ ] Destructors (~): The cleanup function called automatically when an object is destroyed.
+
+3. The Four Pillars of OOP (The Main Event)
+[ ] 1. Encapsulation:
+
+Data hiding using private.
+
+Using public Getter and Setter methods to safely access data.
+
+[ ] 2. Inheritance:
+
+"Is-A" relationships (e.g., a Car is a Vehicle).
+
+Types of Inheritance: Single, Multiple, Multilevel, Hierarchical, Hybrid.
+
+Modes of Inheritance: Inheriting publicly, privately, or protectedly.
+
+The Diamond Problem: Solving multiple inheritance conflicts using Virtual Base Classes.
+
+[ ] 3. Polymorphism (Many Forms):
+
+Compile-Time (Early Binding):
+
+Function Overloading (Functions with the same name, different parameters).
+
+Operator Overloading (Teaching C++ how to use + or == on your custom objects).
+
+Run-Time (Late Binding):
+
+Function Overriding (Child class replacing a Parent class's function).
+
+Virtual Functions: The virtual keyword and how it resolves function calls at runtime.
+
+The vptr (Virtual Pointer) and V-Table (Virtual Table) - crucial for advanced interviews.
+
+[ ] 4. Abstraction:
+
+Hiding the background implementation details.
+
+Pure Virtual Functions: Functions written as virtual void doSomething() = 0;.
+
+Abstract Classes: Classes that cannot be instantiated and are only used as blueprints for child classes.
+
+4. Advanced OOP Mechanics (The Pro Tools)
+[ ] The this Pointer: Pointing to the current object, resolving variable shadowing, and method chaining.
+
+[ ] Static Data Members: A single variable shared by all objects of the class (e.g., tracking total users).
+
+[ ] Static Member Functions: Functions that can be called without even creating an object.
+
+[ ] Friend Functions & Friend Classes: Giving an outside function VIP access to your private data.
+
+[ ] Inline Functions: Requesting the compiler to expand the function code inline to save execution time.
+
+5. OOP combined with Data Structures & Memory
+[ ] Dynamic Memory Allocation in Classes: Using new and delete to create objects on the heap (essential for Linked Lists and Trees).
+
+[ ] Array of Objects: Creating an array where every slot is a complete object.
+
+[ ] Templates with Classes (Generics): Writing a single class that can hold int, string, or custom objects without rewriting the code.
