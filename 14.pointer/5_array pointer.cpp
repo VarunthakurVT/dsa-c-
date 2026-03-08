@@ -4,5 +4,6 @@ using namespace std;
 int main(){
     int arr[] ={30,34,45,3,54};
     cout<<*arr;//it give the array index 1 element 
+    cout<<arr;
     return 0;
 }
