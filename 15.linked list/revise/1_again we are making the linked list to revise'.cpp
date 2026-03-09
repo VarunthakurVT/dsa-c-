@@ -34,4 +34,29 @@ class list{
     tail=newNode;
  }
  }
+ void pop_front(){
+    if(head==NULL){
+        cout<<"the list is empty";
+    }else{
+        Node*temp=head;
+        head=head->next;
+        if(head==NULL)tail=NULL;
+        delete temp;
+
+    }
+}
+    void pop_back(){
+        if(head==NULL){
+            cout<<"this is the empty linked list";
+        }else{
+            Node*temp=head;
+            while(temp->next!=tail){
+                temp=temp->next;
+            }
+            delete temp;
+            tail=temp;
+            tail->next=NULL;
+        }
+    }
+ 
 };
