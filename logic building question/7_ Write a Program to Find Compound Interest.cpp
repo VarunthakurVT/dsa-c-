@@ -6,5 +6,6 @@ float r;
 int t;
 float ci;
 ci=p*r*t/100;
-
+cout<<"the compud interst"<<ci;
+return 0; 
 }
