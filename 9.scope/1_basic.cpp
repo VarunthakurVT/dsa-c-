@@ -1,8 +1,11 @@
 //there are two types of scope---
-//1)local (that can be assessable with in the block of code like if-else,function,loops,{})
+//1)local (that can be assessable with in the block of code like if-else,function,loops,{}) it is also called block scope
 //2)global
 #include <iostream>
 using namespace std;
+int add(int a,int b){ //this is the local parametrized scope
+    return a,b; 
+}
 int main() {
    int a=10;
    if(a>=10){
