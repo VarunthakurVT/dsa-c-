@@ -1,0 +1,3 @@
+C:/Users/vttha/OneDrive/Desktop/dsa-c-/6.function/file-linking/build/CMakeFiles/my_program.dir
+C:/Users/vttha/OneDrive/Desktop/dsa-c-/6.function/file-linking/build/CMakeFiles/edit_cache.dir
+C:/Users/vttha/OneDrive/Desktop/dsa-c-/6.function/file-linking/build/CMakeFiles/rebuild_cache.dir
