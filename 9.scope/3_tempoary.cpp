@@ -14,4 +14,4 @@ int main()
 	std::cout << getValueFromUser() << '\n'; // where does the returned value get stored?
 
 	return 0;
-}
+} 
