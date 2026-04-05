@@ -2,15 +2,17 @@
 
 using namespace std; 
 class Stack{
-    int n=5;
-    int arr[5];
+   int *arr;
+   int size;
   int TOS;
   public:
-  Stack (){
+  Stack (int size){
+    this->size=size;
+    arr=new int[size];
     TOS=-1;
   }
   void push(int val){
-    if(TOS==n-1){
+    if(TOS==size-1){
         cout<<"stack is overflow";
     }else{
         TOS++;
@@ -21,7 +23,7 @@ class Stack{
   
   void pop(){
     if(TOS==-1){
-        cout<<"the stack is overflow ";
+        cout<<"the stack is underflow "; //meaning the stack is empty
     }else{
   TOS--;
 
@@ -37,14 +39,27 @@ class Stack{
   }
   cout<<endl;
 }}
+bool isEmpty(){
+  if(TOS==-1){
+    return true;
+  }else{
+    return false;
+  }
+}
 };
 int main(){
- Stack s;
+ Stack s(5);
  s.push(4);
  s.push(5);
  s.push(23);
  s.pop();
  s.print();
+ if(s.isEmpty()){
+  cout<<"stack is empty";
+ }else{
+  cout<<"stack is not empty";
+ }
+
  return 0;
 
 }
