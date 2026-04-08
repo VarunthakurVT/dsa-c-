@@ -65,4 +65,5 @@ int main(){
     s.push(56);
     s.pop();
     s.print();
+    s.empty();
 }

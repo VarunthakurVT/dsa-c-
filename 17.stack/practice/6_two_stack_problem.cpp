@@ -1,4 +1,5 @@
 #include <iostream> 
+using namespace std;
 class TwoStack {
 
 public: 
@@ -59,4 +60,21 @@ public:
         }
         // Write your code here.
     }
+void printStacks() {
+    cout << "Stack 1 (Top to Bottom): ";
+    for (int i = TOP1; i >= 0; i--) cout << arr[i] << " ";
+    
+    cout << "\nStack 2 (Top to Bottom): ";
+    for (int i = TOP2; i < size; i++) cout << arr[i] << " ";
+    cout << endl;
+}
 };
+int main(){
+    TwoStack s(5);
+s.push1(34);
+s.push1(347);
+s.push2(56);
+s.push2(766);
+s.printStacks();
+}
+
