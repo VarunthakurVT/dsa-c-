@@ -53,5 +53,7 @@ int main(){
     t2.getInfo();
     Teacher t3("varun");
     t3.getInfo();
+    Teacher t4("varun thakur");
+    
     return 0;
 }

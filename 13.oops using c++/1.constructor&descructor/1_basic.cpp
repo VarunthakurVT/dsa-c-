@@ -3,7 +3,7 @@
 #include<string> //it is used to access the string data type 
 using namespace std; 
 class Teacher{
-    private:  //there is three type of acess modifiers like(private,publid,protected)
+    private:  //there is three type of access modifiers like(private,public,protected)
     double salary; //these are the property of class
     public:
     Teacher(){
@@ -16,11 +16,11 @@ class Teacher{
     void changeDept(string newDept){//these are the methods of the class 
   dept=newDept;//in this i make the function to change the name of the dept
     }
-    //this is the setter in the pivate acess modifiers
+    //this is the setter in the private access modifiers
   void setSalary (double s){
   salary=s;  
   }
-  //this is the getter acess modifiers.. this is just like the function 
+  //this is the getter access modifiers.. this is just like the function 
   double getsalary(){
     return salary;
   }
