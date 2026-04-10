@@ -9,14 +9,16 @@ class Student{
     }
     Student(string name){
         this->name;
-        cout<<"permertized";
+        cout<<"permertized"<<endl;
     }
 };
 int main(){
     
     // Student s1; if we do this then it call to non peraertized 
+
     Student s1("varun");
-    
+    Student s2;
+    // s2.name="varun";
    
     return 0;
 

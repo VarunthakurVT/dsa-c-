@@ -6,14 +6,14 @@ class Teacher{
     private:  //there is three type of access modifiers like(private,public,protected)
     double salary; //these are the property of class
     public:
-    Teacher(){
+    Teacher(){ 
       cout<<"Hi i am constructor"<<endl;//this is the constructor
       dept="Computer Science";
     }
     string name;
     string dept;
     string subject;
-    void changeDept(string newDept){//these are the methods of the class 
+    void changeDept(string newDept){//these are the methods of the class "we can understand like a function for constructor"
   dept=newDept;//in this i make the function to change the name of the dept
     }
     //this is the setter in the private access modifiers
@@ -27,7 +27,7 @@ class Teacher{
 };
 int main(){
     Teacher t1; //teacher is the object and t1 is the object and this is the constructor who make automatically  
-    t1.name="varun thakur"; //t1.name t1 is the object   and .is used to acess this like class and object 
+    t1.name="varun thakur"; //t1.name t1 is the object   and .is used to access this like class and object 
     t1.dept;
     t1.setSalary(20000); //in this we do a function call
     cout<<t1.name<<endl;

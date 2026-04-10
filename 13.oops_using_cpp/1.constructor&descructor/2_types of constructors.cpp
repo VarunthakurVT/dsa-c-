@@ -15,10 +15,10 @@ class Teacher{
     //parameterzed
     Teacher(string name, string d, string s, double sal, double cgpa){
         this->name=name;
-        dept=d;
-        subject=s;
-        salary=sal;
-        cgpaPtr=new double;
+       this-> dept=d;
+        this->subject=s;
+       this-> salary=sal;
+       this-> cgpaPtr=new double;
         *cgpaPtr=cgpa;
     }
     //copy constructor  this is the example of shallow copy 
