@@ -1,0 +1,3 @@
+// queue is the first in first out the data structure 
+//in the queue there is 3 operation 
+// push(rear) ,pop(front),front
