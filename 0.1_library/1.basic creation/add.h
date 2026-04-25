@@ -1,0 +1,2 @@
+int add(int a, int b); //in add .h add the add function and also do not forget the ; after the function and write the function name 
+// name and the parameter and also make the library .cpp and the .h name same
