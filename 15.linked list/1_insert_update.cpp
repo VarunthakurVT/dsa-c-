@@ -7,20 +7,29 @@ public:
     Node* next;
     Node(int val) {
         data = val;
-        next = NULL;
+        next = nullptr;
     }
 };
+
 class List {
     Node* head;
     Node* tail;
+    
 public:
     List() {
-        head = tail = NULL;
+        head = tail = nullptr;
     }
-
+~List() {
+        Node* temp = head;
+        while (temp != nullptr) {
+            Node* nextNode = temp->next; // Save the next node
+            delete temp;                 // Delete the current node
+            temp = nextNode;             // Move to the next node
+        }
+    }
     void push_front(int val) {
         Node* newNode = new Node(val);
-        if (head == NULL) {
+        if (head == nullptr) {
             head = tail = newNode;
             return;
         } else {
@@ -31,7 +40,7 @@ public:
 
     void push_back(int val) {
         Node* newNode = new Node(val);
-        if (head == NULL) {
+        if (head == nullptr) {
             head = tail = newNode;
             return;
         } else {
@@ -41,25 +50,25 @@ public:
     }
 
     void pop_front() {
-        if (head == NULL) {
+        if (head == nullptr) {
             cout << "this is the null linked list" << endl;
             return;
         } else {
             Node* temp = head;
             head = head->next;
-            if (head == NULL) tail = NULL;  // List now empty
+            if (head == nullptr) tail = nullptr;  // List now empty
             delete temp;
         }
     }
 
     void pop_back() {
-        if (head == NULL) {
+        if (head == nullptr) {
             cout << "your list is empty" << endl;
             return;
         }
         if (head == tail) {  // Single node
             delete head;
-            head = tail = NULL;
+            head = tail = nullptr;
             return;
         }
         Node* temp = head;
@@ -68,7 +77,7 @@ public:
         }
         delete tail;
         tail = temp;
-        tail->next = NULL;
+        tail->next = nullptr;
     }
 
     void insert(int val, int pos) {
@@ -81,22 +90,22 @@ public:
             return;
         }
         Node* temp = head;
-        for (int i = 0; i < pos - 1 && temp != NULL; i++) {
+        for (int i = 0; i < pos - 1 && temp != nullptr; i++) {
             temp = temp->next;
         }
-        if (temp == NULL) {
+        if (temp == nullptr) {
             cout << "Position too large" << endl;
             return;
         }
         Node* newNode = new Node(val);
         newNode->next = temp->next;
         temp->next = newNode;
-        if (newNode->next == NULL) tail = newNode;  // Inserted at end
+        if (newNode->next == nullptr) tail = newNode;  // Inserted at end
     }
     int search (int key){
         Node*temp=head;
         int idx=0; 
-        while(temp!=0){
+        while(temp!=nullptr){
             if(temp->data==key){
                 return idx;
             }
@@ -108,7 +117,7 @@ public:
 
     void printll() {
         Node* temp = head;
-        while (temp != NULL) {
+        while (temp !=nullptr) {
             cout << temp->data << "->";
             temp = temp->next;
         }
