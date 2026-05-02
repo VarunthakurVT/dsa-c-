@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int dectobimary(int dec){
+int decToBinary(int dec){
 int ans=0; 
 int pow=1;
 while (dec)
@@ -11,10 +11,10 @@ while (dec)
     pow*=10;
 }
 return ans;
-};
+}
 int main(){
 
-    cout<<dectobimary(25);
+    cout<<decToBinary(25);
     return 0;
 }
 
