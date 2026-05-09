@@ -17,10 +17,10 @@ Node*buildTree(Node*root){
  cout<<"Enter data:"<<endl;
  int data;
  cin>>data;
- root=new Node(data);
  if(data==-1){
     return NULL;
- }
+   }
+   root=new Node(data);
  cout<<"enter data for inserting in left "<<data;
  root->left=buildTree(root->left);
 
@@ -115,6 +115,7 @@ postOrder(root);
 int leafCount = 0;
     countLeafnode(root, leafCount);
     cout << "Number of leaf nodes: " << leafCount << endl;
+   cout<<"the number of leaf notes are :::"<< noOfleafnode(root);
 }
 
 
