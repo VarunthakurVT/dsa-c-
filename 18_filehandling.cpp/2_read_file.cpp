@@ -3,7 +3,7 @@
 using namespace std;
 int main(){
 
-ifstream file("./this_file_is_created_by_fstream");
+ifstream file("./this_file_is_created_by_fstream.txt");
     char c;
     c=file.get();
     while(!file.eof()){
