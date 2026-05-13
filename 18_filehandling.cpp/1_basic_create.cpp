@@ -14,7 +14,6 @@ int main(){
     createfile<<"hello  ";  //in this we write all of stuff
     createfile<<"new user login";
     createfile.close();  //this is best practice to close the file 
-    
 
     return 0;
 
