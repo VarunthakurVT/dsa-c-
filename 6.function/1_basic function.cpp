@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 void Hello(){ //void means you can not write the retrun keyword or we can say it does not return the value 
-    cout<<"hello"<<endl; //inside the {} is called body of the function 
+    cout<<"hello"<<endl; //inside the {} is called body of the function this is inside in this scope 
 }//this is the function declaration
 int main(){
     Hello(); //() do not forget this in your code 

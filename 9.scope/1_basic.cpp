@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 int add(int a,int b){ //this is the local parametrized scope
-    return a,b; 
+    return a+b; 
 }
 int main() {
    int a=10;
@@ -12,6 +12,8 @@ int main() {
     int a=100;
     cout<<"this is the example of local scope  "<<a<<endl;
     }
-    cout<<"this is the example of local scope  "<<a;
+    cout<<"this is the example of local scope  "<<a<<endl;
+    int c =add(34,45);
+    cout<<c;
     return 0;
 }
